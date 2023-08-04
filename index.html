@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sequence Teller</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Sequence Teller</h1>
+    <div class="input-section">
+      <label for="parent">prerequisite task:</label>
+      <input type="text" id="parent" class="styled-input" placeholder="enter text"/>
+      <label for="child" >current task:</label>
+      <input type="text" id="child" class="styled-input" placeholder="enter text"/>
+      <div class="containerr">
+          <button onclick="addRelation()" class="styled-button">Add Relation</button>
+      <div>
+      <div class="containerr">
+        <button onclick="performTopologicalSort()" class="styled-button">Topological Sort</button>    
+      </div>
+      
+     
+    </div>
+   
+    <div id="result-container" class="res"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
